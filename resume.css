@@ -1,0 +1,44 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #2d2d2d;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.25cm;
+  margin-bottom: 0.25cm;
+  padding-top: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page:first-of-type {
+  margin-top: 0.5cm;
+}
+
+page:last-of-type {
+  margin-bottom: 0.5cm;
+}
+
+page[size='A4'] {
+  width: 21.5cm;
+  height: 27.4cm;
+}
+
+@media print {
+  body,
+  page {
+    margin: none;
+    box-shadow: none;
+  }
+
+  page {
+    padding-top: 0;
+  }
+}
