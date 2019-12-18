@@ -43,11 +43,6 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  color: #404040;
-  font-weight: 500;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  line-height: 1.4em;
 
   border-right: 2px solid #2883bf;
   margin-right: 1em;
@@ -58,10 +53,16 @@ section {
   max-width: 3.2em;
   box-sizing: border-box;
 }
-.sectionTitle > .text {
-  /* writing-mode: sideways-lr; */
+.sectionTitle > h3.text {
+  font-weight: 500;
+  font-size: 1.15em;
+  color: #404040;
+  text-transform: uppercase;
+  line-height: 1.35em;
+
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  margin: 0px;
 }
 .sectionContent {
   display: flex;
@@ -80,4 +81,42 @@ section {
 
 ul {
   line-height: 1.4em;
+}
+
+.job > .header {
+  display: flex;
+  justify-content: space-between;
+}
+.job > .header > .info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.job > .header > .info > h4 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.job > .header > .info > .meta {
+  display: flex;
+  flex-direction: row;
+}
+.job > .header > .info > .meta > h5 {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  padding-right: 1.2em;
+}
+.job > .header > .info > .meta > h5:first-of-type {
+  color: #2883bf;
+  font-weight: 500;
+  font-style: normal;
+}
+.job > .header > .info > .meta > h5 {
+  color: #666;
+  font-style: italic;
+}
+.job > .header > .timeframe {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #666;
 }

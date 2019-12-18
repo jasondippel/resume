@@ -15,8 +15,8 @@ body {
   margin-top: 0.25cm;
   margin-bottom: 0.25cm;
   padding-top: 1.15cm;
-  padding-left: 0.75cm;
-  padding-right: 0.75cm;
+  padding-left: 1cm;
+  padding-right: 1cm;
   padding-bottom: 1.15cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
@@ -44,8 +44,8 @@ body {
 
   .page {
     padding-top: 0.65cm;
-    padding-left: 0.75cm;
-    padding-right: 0.75cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
     padding-bottom: 0.65cm;
   }
 }
