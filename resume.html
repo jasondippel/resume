@@ -11,14 +11,268 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="pages_layout.css" />
     <link rel="stylesheet" href="resume.css" />
   </head>
   <body>
-    <page size="A4">
-      page 1
-    </page>
-    <page size="A4">
-      page 2
-    </page>
+    <div class="page" size="A4">
+      <header>
+        <div class="title">
+          <h1>Jason Dippel</h1>
+          <h2>Software Engineer</h2>
+          <h2>Vancouver, BC</h2>
+        </div>
+        <address>
+          <a
+            class="email"
+            href="mailto:dippelj12@gmail.com"
+            taget="_blank"
+            rel="noreferrer noopener"
+            >dippelj12@gmail.com</a
+          >
+          <a
+            class="website"
+            href="https://github.com/jasondippel"
+            taget="_blank"
+            rel="noreferrer noopener"
+            >https://github.com/jasondippel</a
+          >
+          <a
+            class="website"
+            href="https://www.linkedin.com/in/jgdippel/"
+            taget="_blank"
+            rel="noreferrer noopener"
+            >www.linkedin.com/in/jgdippel</a
+          >
+        </address>
+      </header>
+      <section>
+        <div class="sectionTitle">
+          <h3 class="text">Languages <br />& Skills</h3>
+        </div>
+        <div class="sectionContent">
+          <div class="row spreadToEdges">
+            <ul style="width: 30%;">
+              <li>React</li>
+              <li>Javascript</li>
+              <li>HTML/CSS</li>
+              <li>GraphQL</li>
+              <li>Node.js</li>
+            </ul>
+            <ul style="width: 70%;">
+              <li>Experience building design systems</li>
+              <li>Architected large and small scale systems</li>
+              <li>Collected data to inform decisions and prove hypotheses</li>
+              <li>Interest in building and testing accessible software</li>
+              <li>Passion to learn and teach team members</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sectionTitle"><h3 class="text">Employment</h3></div>
+        <div class="sectionContent">
+          <div class="item">
+            <div class="header">
+              <div class="info">
+                <h4>Software Developer</h4>
+                <div class="meta">
+                  <h5>Hootsuite</h5>
+                  <h5>Vancouver, BC, Canada</h5>
+                </div>
+              </div>
+              <div class="timeframe">
+                <div>09. 2018</div>
+                <div>Present</div>
+              </div>
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  Built tools in mono-repo to help other developers with their
+                  daily tasks
+                </li>
+                <li>
+                  Built reusable components and systems that are part of the
+                  core UX of all products
+                </li>
+                <li>
+                  Run front-end guild for devs and design to share knowledge,
+                  suggestions, and ask questions
+                </li>
+                <li>
+                  Advocate for and implement product metrics and usage tracking
+                  to inform decisions and prove hypotheses
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="header">
+              <div class="info">
+                <h4>Junior Software Developer</h4>
+                <div class="meta">
+                  <h5>Hootsuite</h5>
+                  <h5>Vancouver, BC, Canada</h5>
+                </div>
+              </div>
+              <div class="timeframe">
+                <div>06. 2017</div>
+                <div>09. 2018</div>
+              </div>
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  Built beginnings of graphQL service in scala to act as facade
+                  for Inbox product
+                </li>
+                <li>
+                  Built react component to enable smooth pagination; reused in
+                  several high-volume products
+                </li>
+                <li>
+                  Gathered metrics around performance of main product's
+                  front-end and created display that was shared company wide
+                </li>
+                <li>
+                  Helped bring company wide design system to life; actively
+                  reworked associated processes to enable better workflows for
+                  stakeholders
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="header">
+              <div class="info">
+                <h4>Co-op Software Engineer</h4>
+                <div class="meta">
+                  <h5>Hootsuite</h5>
+                  <h5>Vancouver, BC, Canada</h5>
+                </div>
+              </div>
+              <div class="timeframe">
+                <div>09. 2016</div>
+                <div>12. 2016</div>
+              </div>
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  Worked on implementing portions of the new Tag Manager in
+                  React
+                </li>
+                <li>
+                  Modified social network transfer flow to encourage adding
+                  social networks and improve the user experience
+                </li>
+                <li>
+                  Owned the frontend portion of significant update to an
+                  existing Hootsuite product
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="page" size="A4">
+      <section>
+        <div class="sectionTitle"><h3 class="text">Employment</h3></div>
+        <div class="sectionContent">
+          <div class="item">
+            <div class="header">
+              <div class="info">
+                <h4>Software Engineering Intern</h4>
+                <div class="meta">
+                  <h5>Bazaarvoice</h5>
+                  <h5>Austin, Texas, USA</h5>
+                </div>
+              </div>
+              <div class="timeframe">
+                <div>01. 2016</div>
+                <div>04. 2016</div>
+              </div>
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  Began work on modularizing main components of the monolithic
+                  codebase using React
+                </li>
+                <li>
+                  Added ability to disable device fingerprinting and
+                  automatically route PII based on locale
+                </li>
+                <li>
+                  Added ability to prevent duplicate loading of JavaScript and
+                  CSS files to open sourced repo
+                </li>
+                <li>Updated build process to be more accurate and reliable</li>
+                <li>Fixed key bugs on one of the company’s main products</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sectionTitle"><h3 class="text">Projects</h3></div>
+        <div class="sectionContent">
+          <div class="item">
+            <div class="header">
+              <div class="info">
+                <h4>storybook-workspace</h4>
+                <div class="meta">
+                  <h5>Dev Tooling</h5>
+                </div>
+              </div>
+              <div class="timeframe">
+                <div>10. 2019</div>
+                <div>Present</div>
+              </div>
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  A workspace I use to help build, organize, and showcase UI
+                  components and libraries
+                </li>
+                <li>
+                  Leverages storybook, community add-ons, and custom add-ons
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="header">
+              <div class="info">
+                <h4>react-hoc-theme</h4>
+                <div class="meta">
+                  <h5>Component</h5>
+                </div>
+              </div>
+              <div class="timeframe">
+                <div>08. 2019</div>
+                <div>12. 2019</div>
+              </div>
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  Higher order component that provides current theme values to
+                  wrapped components
+                </li>
+                <li>
+                  Initially started as a way to learn how to publish npm
+                  packages
+                </li>
+                <li>Ensures all instances use the same version of the theme</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

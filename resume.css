@@ -1,44 +1,122 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #2d2d2d;
+header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+address {
+  margin-top: 0.75em;
+  display: flex;
   flex-direction: column;
-  padding: 0;
+  align-items: flex-start;
+}
+
+a {
+  color: #000;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.4em;
+}
+a:hover {
+  color: #2883bf;
+}
+
+h1 {
+  color: #666;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 0px;
+}
+h2 {
+  color: #2883bf;
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0px;
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.5em;
+}
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  border-right: 2px solid #2883bf;
+  margin-right: 1em;
+  padding-right: 0.55em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  min-width: 3.2em;
+  max-width: 3.2em;
+  box-sizing: border-box;
+}
+.sectionTitle > h3.text {
+  font-weight: 500;
+  font-size: 1.15em;
+  color: #404040;
+  text-transform: uppercase;
+  line-height: 1.35em;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0px;
+}
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.spreadToEdges {
+  justify-content: space-between;
+}
+
+ul {
+  line-height: 1.4em;
+}
+
+.item > .header {
+  display: flex;
+  justify-content: space-between;
+}
+.item > .header > .info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.item > .header > .info > h4 {
   margin: 0;
+  font-size: 1.5em;
 }
-
-page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-top: 0.25cm;
-  margin-bottom: 0.25cm;
-  padding-top: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+.item > .header > .info > .meta {
+  display: flex;
+  flex-direction: row;
 }
-
-page:first-of-type {
-  margin-top: 0.5cm;
+.item > .header > .info > .meta > h5 {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  padding-right: 1.2em;
 }
-
-page:last-of-type {
-  margin-bottom: 0.5cm;
+.item > .header > .info > .meta > h5:first-of-type {
+  color: #2883bf;
+  font-weight: 500;
+  font-style: normal;
 }
-
-page[size='A4'] {
-  width: 21.5cm;
-  height: 27.4cm;
+.item > .header > .info > .meta > h5 {
+  color: #666;
+  font-style: italic;
 }
-
-@media print {
-  body,
-  page {
-    margin: none;
-    box-shadow: none;
-  }
-
-  page {
-    padding-top: 0;
-  }
+.item > .header > .timeframe {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #666;
 }
