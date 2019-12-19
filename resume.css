@@ -83,38 +83,38 @@ ul {
   line-height: 1.4em;
 }
 
-.job > .header {
+.item > .header {
   display: flex;
   justify-content: space-between;
 }
-.job > .header > .info {
+.item > .header > .info {
   display: flex;
   flex-direction: column-reverse;
 }
-.job > .header > .info > h4 {
+.item > .header > .info > h4 {
   margin: 0;
   font-size: 1.5em;
 }
-.job > .header > .info > .meta {
+.item > .header > .info > .meta {
   display: flex;
   flex-direction: row;
 }
-.job > .header > .info > .meta > h5 {
+.item > .header > .info > .meta > h5 {
   margin: 0;
   font-size: 0.9em;
   font-weight: 300;
   padding-right: 1.2em;
 }
-.job > .header > .info > .meta > h5:first-of-type {
+.item > .header > .info > .meta > h5:first-of-type {
   color: #2883bf;
   font-weight: 500;
   font-style: normal;
 }
-.job > .header > .info > .meta > h5 {
+.item > .header > .info > .meta > h5 {
   color: #666;
   font-style: italic;
 }
-.job > .header > .timeframe {
+.item > .header > .timeframe {
   font-size: 0.9em;
   font-weight: 500;
   text-transform: uppercase;
